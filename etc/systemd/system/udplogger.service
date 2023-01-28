@@ -1,0 +1,13 @@
+# udplogger - logging of UDP traffic
+
+[Unit]
+Description=udplogger - logging of UDP traffic
+After=remote-fs.target
+
+[Service]
+Type=simple
+ExecStart=/opt/udplogger/udplogger.py -s
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
