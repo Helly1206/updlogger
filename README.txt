@@ -8,10 +8,12 @@ Use of xml file to setup logging:
 
 <!--This XML file describes the server to log from.
             <logger> Main element, do not change name
-                <ip> IP-address of UDP server (0.0.0.0 for all ip)
-                <port> UDP port
-                <time> true or false add time information
-                <folder> Path to store logfiles (only used in daemon mode)
+                <loggername> Name of the logger, change if required
+                    <ip> IP-address of UDP server (0.0.0.0 for all ip)
+                    <port> UDP port
+                    <time> true or false add time information
+                    <folder> Path to store logfiles (only used in daemon mode)
+                    <maxsize> Maximum file size in bytes
 -->
 
 Runs as service or command line:
